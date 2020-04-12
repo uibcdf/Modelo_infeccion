@@ -41,7 +41,7 @@ class Mundo2d():
 
         lista_colores = [(1,1,1), (0.6, 0.6, 0.6), (1, 0, 0)]
         cm = LinearSegmentedColormap.from_list("colorinfectados", lista_colores)
-        plt.matshow(self.matriz, cmap = cm, origin = "lower")
+        plt.matshow(self.matriz, cmap = cm, vmax=2, origin = "lower")
 
         return plt.show()
 
